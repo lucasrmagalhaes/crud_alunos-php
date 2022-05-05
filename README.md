@@ -1,22 +1,55 @@
 **Sistema Feito em PHP com CodeIgniter:** CRUD de Alunos.
 
+---
+
 **Campos:**
-- [] Nome
-- [] Endereço
-- [] Foto - JPG
+- [x] Nome
+- [x] Endereço
+- [x] Foto - JPG
+
+---
 
 **Entrega:**
-- [] Código Fonte Completo
-- [] Intruções de Instalação
-- [] Local de Armazenamento - Livre
+- [x] Código Fonte Completo
+- [x] Intruções de Instalação
+- [x] Local de Armazenamento - Livre
+
+---
 
 **Extras:**
-- [] Código na Web - Permitindo o Teste Completo da Aplicação Desenvolvida
+- [x] Código na Web - Permitindo o Teste Completo da Aplicação Desenvolvida
+
+---
 
 **Prazo:**
-- [] Mais Rápido Possível
+- [x] Mais Rápido Possível
+
+---
 
 **Itens Avaliados:**
-- [] Velocidade de Desenvolvimento
-- [] Qualidade
-- [] Documentação do Código e Soluções Dadas
+- [x] Velocidade de Desenvolvimento
+- [x] Qualidade
+- [x] Documentação do Código e Soluções Dadas
+
+---
+
+**Iniciar o Projeto - 3 maneiras** <br>
+- Download do arquivo ZIP no site oficial; 
+- Clonar o repositório; e
+- Via composer.
+
+---
+
+**Startar Local**
+```php
+php spark serve
+```
+
+---
+
+**Migrate Alunos**
+```php
+php spark migrate:create alunos
+```
+
+---

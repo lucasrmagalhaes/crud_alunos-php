@@ -1,0 +1,214 @@
+ERROR - 2022-05-05 00:42:33 --> Error connecting to the database: Unknown database 'crud_alunos'
+CRITICAL - 2022-05-05 00:42:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'crud_alunos'
+#0 C:\xampp\htdocs\crud_alunos-php\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\crud_alunos-php\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\crud_alunos-php\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\crud_alunos-php\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Models\AlunosModel.php(23): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(16): App\Models\AlunosModel->getAlunos()
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->index()
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#8 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-05 00:46:13 --> Unknown column 'alunos.deleted_at' in 'where clause'
+CRITICAL - 2022-05-05 00:46:13 --> Unknown column 'alunos.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\crud_alunos-php\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\crud_alunos-php\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\crud_alunos-php\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\crud_alunos-php\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\crud_alunos-php\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\crud_alunos-php\app\Models\AlunosModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(16): App\Models\AlunosModel->getAlunos()
+#8 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->index()
+#9 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#10 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-05-05 01:43:00 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 01:46:33 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 01:49:57 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 01:50:15 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 01:54:46 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 01:54:57 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:54:55 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:55:16 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:56:38 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:56:54 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:58:01 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 02:58:06 --> Call to a member function isValid() on null
+#0 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->gravar()
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-05 03:13:06 --> Illegal string offset 'id'
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\pages\alunos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(111): view('pages/alunos', Array)
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('2')
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-05 03:13:40 --> Illegal string offset 'id'
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\pages\alunos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(111): view('pages/alunos', Array)
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('2')
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-05 03:15:27 --> Illegal string offset 'id'
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\pages\alunos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(111): view('pages/alunos', Array)
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('2')
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-05 03:15:39 --> Illegal string offset 'id'
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\pages\alunos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(111): view('pages/alunos', Array)
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('2')
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-05 03:33:04 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 108, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('inserir')
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-05 03:34:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 108, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('inserir')
+#2 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-05 03:46:36 --> Undefined variable: title
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\templates\header.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(110): view('templates/heade...', Array)
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->item('1')
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-05 05:01:02 --> Object of class CodeIgniter\Validation\Validation could not be converted to string
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos_gr...', Array, true)
+#3 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(31): view('pages/alunos_gr...')
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->inserir()
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-05 05:07:09 --> Undefined variable: isPost
+#0 C:\xampp\htdocs\crud_alunos-php\app\Views\pages\alunos_gravar.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/alunos_gr...', Array, true)
+#4 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Alunos.php(31): view('pages/alunos_gr...')
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Alunos->inserir()
+#6 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alunos))
+#7 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

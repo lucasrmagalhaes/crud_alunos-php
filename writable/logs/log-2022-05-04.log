@@ -1,0 +1,50 @@
+CRITICAL - 2022-05-04 21:29:08 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Home.php(14): view('pages/home', Array)
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-04 21:30:23 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Home.php(14): view('pages/home', Array)
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-04 21:35:52 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Home.php(14): view('pages/home')
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-04 23:36:33 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Home.php(14): view('pages/home')
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-04 23:37:05 --> Invalid file: pages/home.php
+#0 C:\xampp\htdocs\crud_alunos-php\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+#1 C:\xampp\htdocs\crud_alunos-php\system\Common.php(1089): CodeIgniter\View\View->render('pages/home', Array, true)
+#2 C:\xampp\htdocs\crud_alunos-php\app\Controllers\Home.php(14): view('pages/home')
+#3 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\crud_alunos-php\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\crud_alunos-php\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\crud_alunos-php\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
