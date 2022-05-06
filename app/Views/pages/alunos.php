@@ -1,4 +1,6 @@
 <div class="container"> 
+    <a href="<?= '/alunos/inserir' ?>" class="btn btn-primary mb-3">Adicionar Aluno</a>
+
     <?php if (!empty($alunos) && is_array($alunos)) : ?>
         <table class="table table-lg table-bordered table-hover">
             <thead class="thead-dark">
@@ -11,8 +13,6 @@
             </thead>
             
             <?php foreach($alunos as $aluno) : ?>
-
-            <a href="<?= '/alunos/inserir' ?>" class="btn btn-primary mb-3">Adicionar Aluno</a>
 
             <tbody>
                 <tr>
