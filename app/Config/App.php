@@ -14,7 +14,7 @@ class App extends BaseConfig
     public $supportedLocales = ['pt-BR'];
     public $appTimezone = 'America/Sao_Paulo';
     public $charset = 'UTF-8';
-    public $forceGlobalSecureRequests = false; // Produção com SSL - true
+    public $forceGlobalSecureRequests = true; // Produção com SSL - true
     public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler';
     public $sessionCookieName = 'ci_session';
     public $sessionExpiration = 7200;
