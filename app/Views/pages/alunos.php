@@ -30,11 +30,12 @@
             <?php endforeach; ?>
         </table>
     <?php else : ?>
+        <br>
+
         Não existe nenhum aluno cadastrado no Sistema!
 
         <div class="d-flex justify-content-end">
             <a href="javascript:history.back()" class="btn btn-primary mr-2">Voltar</a>
-            <a href="<?= '/alunos/inserir' ?>" class="btn btn-primary">Adicionar Aluno</a>
         </div>
     <?php endif ?>
 </div>
