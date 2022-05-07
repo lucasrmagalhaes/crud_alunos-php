@@ -7,7 +7,7 @@ use CodeIgniter\Config\BaseConfig;
 class App extends BaseConfig
 {
     public $baseURL = 'https://crud-alunos-codeigniter.herokuapp.com/';
-    public $indexPage = 'index.php';
+    public $indexPage = '';
     public $uriProtocol = 'REQUEST_URI';
     public $defaultLocale = 'pt-BR';
     public $negotiateLocale = false;
