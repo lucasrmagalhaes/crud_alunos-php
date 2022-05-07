@@ -110,15 +110,17 @@ class Alunos extends Controller
                 ]);
 
                 if ($validaIMG) {
-                    $novoNome = $img->getRandomName();
+                    // $novoNome = $img->getRandomName();
 
                     // $img->move('img/alunos', $novoNome);
+
+                    $img = base64_encode(file_get_contents(addslashes($img));
 
                     $model->save([
                         'id' => $id,
                         'nome' => $nome,
                         'endereco' => $endereco,
-                        'img' => $novoNome
+                        'img' => $img
                     ]);
 
                     return redirect()->route('alunos');
