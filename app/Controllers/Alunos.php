@@ -112,7 +112,7 @@ class Alunos extends Controller
                 if ($validaIMG) {
                     $novoNome = $img->getRandomName();
 
-                    $img->move('img/alunos', $novoNome);
+                    // $img->move('img/alunos', $novoNome);
 
                     $model->save([
                         'id' => $id,

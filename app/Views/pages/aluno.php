@@ -2,7 +2,7 @@
     <div class="card my-3">
         <div class="card-body d-flex justify-content-center">
             <img 
-                src="/img/alunos/<?= $alunos['img'] ?>" 
+                src="data:image/jpeg;base64,<?= base64_encode($alunos['img']) ?>"
                 alt="Aluno"
                 class="img-fluid col-md-3"
             >
