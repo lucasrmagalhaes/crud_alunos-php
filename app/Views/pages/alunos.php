@@ -30,6 +30,8 @@
             <?php endforeach; ?>
         </table>
     <?php else : ?>
-        <?php echo "\n Não existe nenhum aluno cadastrado no Sistema!"; ?>
+        <?php 
+            echo "<br> Não existe nenhum aluno cadastrado no Sistema!"; 
+        ?>
     <?php endif ?>
 </div>
