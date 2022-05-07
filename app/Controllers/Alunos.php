@@ -114,7 +114,7 @@ class Alunos extends Controller
 
                     // $img->move('img/alunos', $novoNome);
 
-                    $img = base64_encode(file_get_contents(addslashes($img));
+                    $img = base64_encode(file_get_contents(addslashes($img)));
 
                     $model->save([
                         'id' => $id,
