@@ -55,7 +55,7 @@ class Alunos extends Controller
                     'endereco' => $endereco
                 ]);
 
-                return redirect('alunos');
+                return redirect('/alunos');
             } else {
                 $validaIMG = $this->validate([
                     'img' => [
@@ -77,7 +77,7 @@ class Alunos extends Controller
                         'img' => $novoNome
                     ]);
 
-                    return redirect('alunos');
+                    return redirect('/alunos');
                 } else {
                     $data['title'] = 'Erro ao gravar o aluno!';
 
