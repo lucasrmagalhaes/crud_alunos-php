@@ -15,7 +15,7 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-$routes->get('/', 'Alunos::index');
+$routes->get('/', 'Home::index');
 $routes->match(['get', 'post'], 'alunos/inserir', 'Alunos::inserir');
 $routes->match(['get', 'post'], 'alunos/gravar', 'Alunos::gravar');
 $routes->match(['get', 'post'], 'alunos/editar/(:num)', 'Alunos::editar/$1');

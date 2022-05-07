@@ -32,69 +32,6 @@ class Alunos extends Controller
         echo view('templates/footer');
     }
 
-    public function gravar()
-    {
-        helper('form');
-
-        $model = new AlunosModel();
-
-        if ($this->validate([
-            'nome' => ['label' => 'Nome', 'rules' => 'required|min_length[3]|max_length[100]'],
-            'endereco' => ['label' => 'Endereço', 'rules' => 'required|min_length[3]|max_length[200]'],
-            'img' => []
-        ])) {
-            $id = $this->request->getVar('id');
-            $nome = $this->request->getVar('nome');
-            $endereco = $this->request->getVar('endereco');
-            $img = $this->request->getFile('img');
-
-            if (!$img->isValid()) {
-                $model->save([
-                    'id' => $id,
-                    'nome' => $nome,
-                    'endereco' => $endereco
-                ]);
-
-                return redirect('/alunos');
-            } else {
-                $validaIMG = $this->validate([
-                    'img' => [
-                        'uploaded[img]',
-                        'mime_in[img,image/jpg,image/jpeg,image/gif,image/png]',
-                        'max_size[img, 4096]'
-                    ]
-                ]);
-
-                if ($validaIMG) {
-                    $novoNome = $img->getRandomName();
-
-                    $img->move('img/alunos', $novoNome);
-
-                    $model->save([
-                        'id' => $id,
-                        'nome' => $nome,
-                        'endereco' => $endereco,
-                        'img' => $novoNome
-                    ]);
-
-                    return redirect('/alunos');
-                } else {
-                    $data['title'] = 'Erro ao gravar o aluno!';
-
-                    echo view('templates/header', $data);
-                    echo view('pages/alunos_gravar');
-                    echo view('templates/footer');
-                }
-            }
-        } else {
-            $data['title'] = 'Erro ao gravar o aluno!';
-
-            echo view('templates/header', $data);
-            echo view('pages/alunos_gravar');
-            echo view('templates/footer');
-        };
-    }
-
     public function item($id = NULL)
     {
         $model = new AlunosModel();
@@ -137,5 +74,68 @@ class Alunos extends Controller
         $model->delete($id);
 
         return redirect('alunos');
+    }
+
+    public function gravar()
+    {
+        helper('form');
+
+        $model = new AlunosModel();
+
+        if ($this->validate([
+            'nome' => ['label' => 'Nome', 'rules' => 'required|min_length[3]|max_length[100]'],
+            'endereco' => ['label' => 'Endereço', 'rules' => 'required|min_length[3]|max_length[200]'],
+            'img' => []
+        ])) {
+            $id = $this->request->getVar('id');
+            $nome = $this->request->getVar('nome');
+            $endereco = $this->request->getVar('endereco');
+            $img = $this->request->getFile('img');
+
+            if (!$img->isValid()) {
+                $model->save([
+                    'id' => $id,
+                    'nome' => $nome,
+                    'endereco' => $endereco
+                ]);
+
+                return redirect()->route('alunos');
+            } else {
+                $validaIMG = $this->validate([
+                    'img' => [
+                        'uploaded[img]',
+                        'mime_in[img,image/jpg,image/jpeg,image/gif,image/png]',
+                        'max_size[img, 4096]'
+                    ]
+                ]);
+
+                if ($validaIMG) {
+                    $novoNome = $img->getRandomName();
+
+                    $img->move('img/alunos', $novoNome);
+
+                    $model->save([
+                        'id' => $id,
+                        'nome' => $nome,
+                        'endereco' => $endereco,
+                        'img' => $novoNome
+                    ]);
+
+                    return redirect()->route('alunos');
+                } else {
+                    $data['title'] = 'Erro ao gravar o aluno!';
+
+                    echo view('templates/header', $data);
+                    echo view('pages/alunos_gravar');
+                    echo view('templates/footer');
+                }
+            }
+        } else {
+            $data['title'] = 'Erro ao gravar o aluno!';
+
+            echo view('templates/header', $data);
+            echo view('pages/alunos_gravar');
+            echo view('templates/footer');
+        };
     }
 }
